@@ -1,0 +1,19 @@
+Existe la necesidad de que una persona conozca el valor de la liquidación de los impuestos de su
+automóvil antes de realizar el pago respectivo. De igual manera, las empresas que recaudan estos
+impuestos deben saber cuáles son los valores de pago, y así poder realizar sus actividades de manera
+efectiva.
+Un calculador de impuestos, debe tener la capacidad de calcular el total de los impuestos de un carro
+determinado, dependiendo del valor del automóvil, y de los descuentos a los que aplica dependiendo
+de la situación.
+Para este caso, existen tres tipos de descuentos que puede aplicarse:
+1. Descuento por pronto pago, que consiste en un porcentaje determinado del valor del vehículo.
+2. Descuento por ser de servicio público, que es un valor fijo que se descuenta a todos los
+automóviles que prestan este tipo de servicios.
+3. Descuento por traslado de cuenta que también es un porcentaje sobre los impuestos.
+Durante la liquidación de impuestos se debe tener en cuenta que:
+• El porcentaje de descuento por traslado de cuenta debe ser mayor que el porcentaje de
+descuento por pronto pago, los descuentos se aplican en secuencia utilizando el último valor
+calculado. Por ejemplo, si se tiene una liquidación a la que aplican todos los descuentos,
+primero se descuenta el porcentaje por pronto pago, luego a este valor se le aplica el
+descuento por servicio público, y luego al resultado se le aplica el descuento por traslado de
+cuenta.
