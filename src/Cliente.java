@@ -2,10 +2,12 @@ public class Cliente {
     
     private Negocios negocios;
 
+    //Constructor
     public Cliente(Negocios negocios) {
         this.negocios = negocios;
     }
 
+    //Calculamos el total de impuestos
     public double getTotalImpuesto() {
         double ValorDescuento = negocios.getValorCarro() - negocios.getPagoTemprano();
         ValorDescuento -= negocios.getServicioPublico();
@@ -15,6 +17,7 @@ public class Cliente {
     }
 }
 
+//Control de errores
 class DescuentoInvalido extends Exception {
     public DescuentoInvalido(String mensaje) {
         super(mensaje);

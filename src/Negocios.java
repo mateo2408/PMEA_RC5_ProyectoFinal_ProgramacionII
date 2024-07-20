@@ -4,6 +4,7 @@ public class Negocios {
     private double ServicioPublico;
     private double TrasladoCuenta;
 
+    //Constructor
     public Negocios(double ValorCarro, double PagoTemprano, double ServicioPublico, double TrasladoCuenta) throws DescuentoInvalido {
         validarDescuento(PagoTemprano, TrasladoCuenta);
 
@@ -13,6 +14,7 @@ public class Negocios {
         this.TrasladoCuenta = TrasladoCuenta;
     }
 
+    //Validaciones de descuentos
     private void validarDescuento(double PagoTemprano, double TrasladoCuenta) throws DescuentoInvalido {
         if (PagoTemprano < 0.00 || PagoTemprano > 1.00) {
             throw new DescuentoInvalido("El descuento por pago temprano debe ser entre 0.00 y 1.00.");
@@ -27,18 +29,22 @@ public class Negocios {
         }
     }
 
+    //Valor del carro
     public double getValorCarro() {
         return ValorCarro;
     }
 
+    //Pago Temprano
     public double getPagoTemprano() {
         return ValorCarro * PagoTemprano;
     }
 
+    //Servicio Publico
     public double getServicioPublico() {
         return ServicioPublico;
     }
 
+    //Traslado de Cuenta
     public double getTrasladoCuenta() {
         double discountedValue = ValorCarro - getPagoTemprano();
         return discountedValue * TrasladoCuenta;
